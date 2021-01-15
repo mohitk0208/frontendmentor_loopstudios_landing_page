@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  padding: 5% 8%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+}
+.navlinks li {
+  padding: 5px 15px 5px 5px;
+}
+
+header h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  width: 45%;
+  text-transform: uppercase;
+  padding: 2rem;
+  line-height: 5rem;
+  border: 2px solid white;
+  margin-top: 10%;
+}
+
+main {
+  width: 80%;
+  margin: 7% auto;
+}
+
+#summary {
+  position: relative;
+}
+#summary img {
+  height: 100%;
+}
+#summary .summary-text {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  width: 50%;
+  padding: 6% 2px 2px 10%;
+  background-color: white;
+}
+#summary .summary-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+#summary .summary-text p {
+  line-height: 1.5rem;
+}
+
+#creations {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+#creations h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: 1rem;
+}
+#creations button {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 8rem;
+  border: 2px solid dimgray;
+  background-color: white;
+  text-transform: uppercase;
+  justify-self: end;
+  margin-bottom: 1rem;
+}
+#creations .image-container {
+  position: relative;
+}
+#creations .image-container p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+footer {
+  background-color: black;
+  padding: 2% 10%;
+  display: flex;
+  justify-content: space-between;
+  color: #8c8c8c;
+}
+footer .pages .navlinks li {
+  padding-left: 0;
+}
+footer .social {
+  text-align: right;
+}
+footer .social .navlinks {
+  justify-content: flex-end;
+}
+footer .social p {
+  padding-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
