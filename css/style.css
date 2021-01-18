@@ -13,7 +13,7 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("../../images/desktop/image-hero.jpg");
+  background-image: url("./../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   color: white;
   padding: 5% 8%;
@@ -134,7 +134,7 @@ footer .social p {
 
 @media (max-width: 720px) {
   header {
-    background-image: url("../../images/mobile/image-hero.jpg");
+    background-image: url("./../images/mobile/image-hero.jpg");
   }
   header h1 {
     width: 80%;

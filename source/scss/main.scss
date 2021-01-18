@@ -23,7 +23,7 @@ body {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-image: url("../../images/desktop/image-hero.jpg");
+	background-image: url("./../images/desktop/image-hero.jpg");
 	background-repeat: no-repeat;
     color: $white;
 	padding: 5% 8%;
@@ -173,7 +173,7 @@ footer {
 @media (max-width:720px) {
 
 	header {
-		background-image: url("../../images/mobile/image-hero.jpg");
+		background-image: url("./../images/mobile/image-hero.jpg");
 		h1 {
 			width: 80%;
 			margin: 40% auto 0 auto;
