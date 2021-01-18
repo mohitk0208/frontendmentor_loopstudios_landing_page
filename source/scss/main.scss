@@ -27,6 +27,16 @@ header {
 	background-repeat: no-repeat;
     color: $white;
 	padding: 5% 8%;
+	h1 {
+		font-weight: 300;
+		font-size: clamp(2rem,3.5vw,4rem);
+		width: 45%;
+		text-transform: uppercase;
+		padding: clamp(1rem,2vw,2rem);
+		line-height: clamp(3rem,5vw,5rem);
+		border: 2px solid $white;
+		margin-top: 10%;
+	}
 }
 
 nav {
@@ -45,18 +55,6 @@ nav {
 	}
 }
 
-header {
-	h1 {
-		font-weight: 300;
-		font-size: 4rem;
-		width: 45%;
-		text-transform: uppercase;
-		padding: 2rem;
-		line-height: 5rem;
-		border: 2px solid $white;
-		margin-top: 10%;
-	}
-}
 
 main {
 	width: 80%;
@@ -77,7 +75,7 @@ main {
         background-color: $white;
         
         h2 {
-            font-size: 2.4rem;
+            font-size: clamp(2rem,5vw,2.4rem);
             margin-bottom: 1rem;
             line-height: 3rem;
             text-transform: uppercase;
@@ -173,5 +171,64 @@ footer {
 }
 
 @media (max-width:720px) {
-	
+
+	header {
+		background-image: url("../../images/mobile/image-hero.jpg");
+		h1 {
+			width: 80%;
+			margin: 40% auto 0 auto;
+		}
+	}
+
+	#summary {
+		position: initial;
+		text-align: center;
+
+		img {
+			width: 100%;
+		}
+
+		.summary-text {
+			position: initial;
+			width: 100%;
+			padding: 0;
+		}
+	}
+
+	#creations {
+		display: flex;
+		flex-direction: column;
+
+		.image-container {
+			img {
+				width: 100%;
+			}
+		}
+
+		button {
+			margin: auto;
+		}
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+		.pages {
+			.navlinks {
+				flex-direction: column;
+			}
+		}
+
+		.social {
+			text-align: center;
+			.navlinks {
+				justify-content: center;				
+
+			}
+			p {
+				font-size: 0.8rem;
+				padding: 0;
+			}
+		}
+	}
 }
