@@ -162,6 +162,7 @@ footer .social p {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    z-index: 5;
   }
   header nav.open .navlinks {
     display: flex;
