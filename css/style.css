@@ -7,7 +7,6 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 header {
@@ -52,9 +51,6 @@ main {
 
 #summary {
   position: relative;
-}
-#summary img {
-  height: 100%;
 }
 #summary .summary-text {
   position: absolute;
@@ -104,6 +100,9 @@ main {
 #creations .image-container {
   position: relative;
 }
+#creations .image-container img {
+  width: 100%;
+}
 #creations .image-container p {
   color: white;
   position: absolute;
@@ -136,6 +135,10 @@ footer .social p {
 @media (max-width: 720px) {
   header {
     background-image: url("./../images/mobile/image-hero.jpg");
+    background-size: cover;
+  }
+  header nav .navlinks {
+    display: none;
   }
   header h1 {
     width: 80%;
