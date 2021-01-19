@@ -134,12 +134,13 @@ main {
 		// 	left: 0;
 		// }
 		p {
+
 			color: $white;
 			position: absolute;
 			bottom: 0;
 			text-transform: uppercase;
-			font-size: 2.2rem;
-			padding: 2rem;
+			font-size: clamp(1rem,6vw,2.2rem);
+			padding: clamp(1rem,6vw,2.2rem);
 		}
 
 	}
@@ -209,14 +210,24 @@ footer {
 		display: flex;
 		flex-direction: column;
 
+		h2{
+			text-align: center;
+		}
+
 		.image-container {
 			img {
 				width: 100%;
+			}
+
+			p{
+				width: 70%;
 			}
 		}
 
 		button {
 			margin: auto;
+			margin-bottom: 1rem;
+			padding: 0.5rem;
 		}
 	}
 
